@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    my-app:
+        image: 147357061864.dkr.ecr.us-east-1.amazonaws.com/my-app:1.1
+        ports:
+            - "3001:3000"
+    mongo4:
+        image: mongo
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=mongoadmin4
+            - MONGO_INITDB_ROOT_PASSWORD=password4
+        ports:
+            - "27018:27018"
+    mongo-express4:
+        image: mongo-express
+        environment:
+            - ME_CONFIG_MONGODB_SERVER=mongo4
+            - ME_CONFIG_MONGODB_ADMINUSERNAME=mongoadmin4
+            - ME_CONFIG_MONGODB_ADMINPASSWORD=password4
+        ports:
+            - "8082:8081"
+        depends_on:
+            - mongo4
+        restart: unless-stopped

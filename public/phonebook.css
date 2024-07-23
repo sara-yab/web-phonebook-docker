@@ -1,0 +1,113 @@
+html{
+    background-color: #f7f1e3;
+}
+
+.header-container-1{
+    color : #22a6b3;  
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 0.5rem; 
+    /*display: flex;*/
+    justify-content: space-between;
+    padding: 0.8rem 4rem;
+    font-size : 1.5em;
+    font-weight : bold;
+    text-align: center;
+}
+
+.container-2{
+    color : black; 
+    font-size: 1em;
+    margin: 0.5rem;
+    padding: 0.4rem 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#search_input {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 20%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 0.3rem; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin :1rem;  /* Add some space below the input */
+  margin-left: 0rem;
+}
+
+.container-3{
+  margin: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0.4rem 2rem;
+}
+
+  #name_input{
+    margin: 0.7rem 0rem 0.7rem 0.5rem;
+    width: 17%;
+    padding: 0.3rem;
+  }
+
+  #id_input{
+    margin: 0.7rem 0rem 0.7rem 0rem;
+    width: 3%;
+    padding: 0.3rem;
+  }
+
+  #email_input{
+    margin: 0.7rem 0rem 0.7rem 0rem;
+    width: 24%;
+    padding: 0.3rem;
+  }
+
+  #phone_input{
+    margin: 0.7rem 0rem 0.7rem 0rem;
+    width: 14%;
+    padding: 0.3rem;
+  }
+
+  #country_input{
+    margin: 0.7rem 0rem 0.7rem 0rem;
+    width: 8%;
+    padding: 0.3rem;
+  }
+
+  #button-1, button-2{
+    padding: 0.2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+
+  #button-1:hover {
+    background-color: #10ac84;
+  }
+
+  #button-2:hover {
+    background-color: #ee5253;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 2.7rem;
+  }
+  
+  td, th {
+    border: 1px solid #22a6b3;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th{
+    text-align : center;
+    font-weight: bold;
+    background-color:#93dadf;
+    cursor: pointer;
+  }
+
+  th:hover {
+    background-color: #21b7c1;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dff9fb;
+  }

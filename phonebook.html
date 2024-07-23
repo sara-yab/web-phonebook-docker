@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="phonebook.css">
+    <title>Phonebook</title>
+    <script src="phonebook.js"></script> 
+</head>
+
+<body onload="onLoadBody()">
+    <div class="header-container-1">
+        <h2>Find People, Phone Numbers, Addresses and More </h2>
+    </div>
+
+    <div class = container-2>
+        <p>You can search members, by name:</p>
+        <!--<p id="sort_button"><button onclick="sortTable_id()">Sort</button></p>-->
+        <input type="text" id="search_input" onkeyup="searchUser()" placeholder="Search for names..">
+    </div>
+
+    <div class = container-3>
+      <p>For adding members, fill these tabs and click create row.</p>
+
+      <input type="text" id="name_input" placeholder="Name">
+      <input type="text" id="id_input"  placeholder="ID" hidden>
+      <input type="text" id="email_input" placeholder="Email">
+      <input type="text" id="phone_input" placeholder="Phone number">
+      <input type="text" id="country_input" placeholder="Country"><br>
+  
+      <button id='button-1' onclick="addUser()">Create row</button>
+      <button id='button-2' onclick="deleteUser()">Delete row</button>
+    </div>
+
+    <div class = container-4>
+        <table id="my_table">
+            <tr id="tableLable">
+              <th onclick="sort_table(1)">ID</th>
+              <th onclick="sort_table(0)">Name</th>
+              <th onclick="sort_table(3)">Phone number</th>
+              <th onclick="sort_table(2)">Email</th>
+              <th onclick="sort_table(4)">Country</th>
+            </tr>
+            <!-- <tr>
+              <td>Sara Yabesi</td>
+              <td>1</td>
+              <td>sara.yabesi@gmail.com</td>
+              <td>09125028216</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>John Snow</td>
+              <td>2</td>
+              <td>John@gmail.com</td>
+              <td>09123344556</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+                <td>Aria Stark</td>
+                <td>3</td>
+                <td>aria@gmail.com</td>
+                <td>09122272567</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Cersei Lannister</td>
+                <td>4</td>
+                <td>cersei@gmail.com</td>
+                <td>09121122525</td>
+                <td>UK</td>
+            </tr> -->
+          </table> 
+    </div>
+
+</body>
+</html>
